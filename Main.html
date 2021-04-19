@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "Main.css" rel = "stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id = "root">
+
+        <div class = "homepage_layout">
+
+            <!--header 시작--> 
+            <div class = "header_class">
+                <div class = "header_txt">
+                    <ul>
+                        <li class = "header_home" onclick = "home()">Home</li>
+                        <li class = "header_about" onclick = "about()">About</li>
+                        <li class = "header_skills" onclick = "skills()" >Skills</li>
+                        <li class = "header_project" onclick = "project()">Project</li>
+                        <li class = "header_contact" onclick = "contact()">Contact</li>
+                    </ul>
+                </div>
+                <div class= "blank_white"></div>
+            </div>
+            <!--header끝--> 
+
+            <!--typer시작--> 
+            <div class = "typer">
+                    <h1 class = "typer_content"></h1>
+            </div>
+            <!--typer끝-->
+
+            <!--about 부분-->
+            <div class = "about">
+                <div class = "about_me">
+                    <div class = "about_me_text">
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+                <div class = "about_text">
+                    <h1 class = "about_text_title">노력하는 사람</h1>
+                    <p>
+                        어릴때 부터 호기심이 많은 성격에 만들어 보았던
+                        간단한 계산기 프로그램으로 무언가를 만드는 것의
+                        재미를 느끼게 되었고 그때부터 개발자를 꿈꾸게 되었습니다.
+                        <br>
+                        계속해서 완성도 높은 코드, 그리고 완성도 높은 UI를 위해
+                        매일 고뇌하고 성장하는 사람이 되도록 하겠습니다.
+                        <br>
+                        잘부탁드립니다.
+                    </p>
+                </div>
+            </div>
+            <!--about 끝-->
+
+            <!--skill 시작-->
+            <div class = "skills">
+                <h1 class = "skills_heeding">
+                    Skills
+                </h1>
+                
+                <div class = "skills_publish" id = "skills_content">
+                    <p>
+                        Publishing
+                    </p>
+
+                    <div class = "skills_js" id = "skills_picture" style="background-image: url(img/js.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_html" id = "skills_picture" style="background-image: url(img/html5.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_css" id = "skills_picture" style="background-image: url(img/css.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class = "skills_frontend" id = "skills_content">
+                    <p>
+                        Front_end
+                    </p>
+
+                    <div class = "skills_js" id = "skills_picture" style="background-image: url(img/js.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_html" id = "skills_picture" style="background-image: url(img/html5.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_css" id = "skills_picture" style="background-image: url(img/css.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_jquery" id = "skills_picture" style="background-image: url(img/jquery.png);">
+                        <div class = "skills_label">
+                            familar
+                        </div>
+                    </div>
+
+                    <div class = "skills_react" id = "skills_picture" style="background-image: url(img/react.png);">
+                        <div class = "skills_label">
+                            Trying
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class = "skills_backend" id = "skills_content">
+                    <p>
+                        Back_end
+                    </p>
+
+                    <div class = "skills_nodejs" id = "skills_picture" style="background-image: url(img/nodejs.png);">
+                        <div class = "skills_label">
+                            Trying
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--skill끝-->
+
+            <!--project 시작-->
+            <div class = "project">
+
+                <h1 class = "project_heeding">
+                    Project
+                </h1>
+
+                <!--content 1-->
+                <div class = "map_sns" id = "project_content">
+                    <div class = "map_sns_img" id = "project_img">
+                        <a href = "https://github.com/YoonMinSeok/Travel_SNS">
+                            <img src = "img/KTISS.png" alt = "">
+                        </a>
+                    </div>
+                    <div class = "map_sns_Inf" id = "project_text">
+                        <div class = "project_text_box">
+                            <h1 class = "map_sns_title">
+                            지도 SNS  
+                            </h1>
+                            <p>
+                                근무처 : 윈정보기술
+                            </p>
+                            <p>
+                                개발일자 : 2020.07.04 ~ 2020.11.15
+                            </p>
+                            <p>
+                                Nodejs, js 와 SKT의 지도 API를 사용하여 
+                                만든 여행 SNS.
+                            </p>
+                            <p>
+                                #JS #Node.js #HTML5 #CSS #Oracle
+                            </p>
+                            <div class = "content_link">
+                                <a href = "https://github.com/YoonMinSeok/Travel_SNS">
+                                    <img src = "img/github.png" alt = "">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--content 1-->
+
+            </div>
+            <!--project 끝-->
+
+            <!--contact 시작-->
+            <div id = "contact">
+                <h1 class = "contact_heeding">
+                    CONTACT
+                </h1>
+                <h1 class = "contact_email">
+                    ykmvm147@naver.com
+                </h1>
+                
+                <div class = "contatct_github">
+
+                    <a href = "https://github.com/YoonMinSeok">
+                        <img src = "img/github.png" alt = "">
+                    </a>
+                    
+                </div>
+            </div>
+            <!--contact 끝-->
+
+        </div><!--homepagelayout끝--> 
+         
+    </div><!--root끝-->
+
+    <script src="script.js"></script>
+</body>
+</html>

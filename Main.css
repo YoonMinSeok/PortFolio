@@ -1,0 +1,351 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    transition-duration: 5s; /* 1000밀리초와 같다 */
+    animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+
+@keyframes fadein {
+    from {opacity:0.7;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0.7;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0.7;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0.7;}
+    to {opacity: 1;}
+}
+
+#root{
+    margin: 0;
+    padding : 0;
+    width : 100%;
+    height : 100%;
+}
+
+.homepage_layout{
+    width : 100%;
+    height: 100%;
+    
+}
+
+.header_class{
+    width : 95%;
+    height : 65px; 
+    position : fixed;
+}
+.header_txt{
+    margin : 0;
+    padding : 0;
+    background-color: #232323;
+    width : 840px;
+    height : 65px;
+    right : 0;
+    position : absolute;
+    border-radius: 0 0 25px 25px;
+}
+.header_txt ul{
+    margin : 0;
+    padding: 0;
+    width : 850px;
+    height : 65px;
+    text-align: center;
+    
+}
+.header_txt ul li{
+    padding-top: 20px;
+    display: block;
+    width : 100px;
+    height: 65px;
+    list-style-type: none;
+    float : left;
+    font-weight: bold;
+    color : gray;
+    font-size: large;
+    margin-left:55px;
+}
+
+.header_txt ul li:hover{
+    color : white;
+    cursor : pointer;
+}
+
+.typer{
+  display: flex;
+  width : 100%;
+  height : 755px;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  background-image: url('img/keyboard.jpg');
+  min-height: 100%;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+}
+
+.typer .typer_content{
+    justify-content: center;
+    color: white;
+    height : 80px;
+    font-size : 55px;
+    border-right: .1em solid white;
+    font-family: Noto Sans KR,sans-serif;
+    animation: cursor 0.7s ease infinite;
+}
+@keyframes cursor{
+    50%{ border-color: transparent; }
+  }
+  
+
+.about{
+    width : 100%;
+    height : 370px;
+    float: left;
+    background-color: white;
+}
+
+.about p{
+    text-align : center;
+    font-size: 15px;
+}
+
+.about_me{
+    float : left;
+    height : 100%;
+    width : 25%;
+    text-align: center;
+}
+
+.about_me_text{
+    width : 100%;
+    height: 40px;
+    margin-top: 50%; 
+}
+.about_me_text h1{
+    font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+
+.about_me_text h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: 2px solid #1E90FF;
+    margin: 0 auto;
+  }
+
+.about_text{
+    float : left;
+    height : 200px;
+    width : 75%;
+    margin-top: 90px;
+}
+
+.about_text h1{
+    margin-left: 100px;
+    
+}
+
+.about_text p{
+    text-align: left;
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    width : 850px;
+    line-height: 25px;
+}
+
+
+.skills{
+    width : 100%;
+    height : 800px;
+    float: left;
+    background-color: lightgrey;
+}
+
+.skills h1{
+    margin : 0 auto;
+    text-align : center;
+    margin-top : 20px;
+    width : 150px;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+
+.skills h1::after {
+    content: "";
+    display: block;
+    width: 35px;
+    border-bottom: 2px solid #F361A6;
+    margin : 0 0 0 15px;
+  }
+
+#skills_content p{
+    text-align: center;
+    font-size : 25px;
+    font-weight: bold;
+}
+
+
+#skills_content{
+    margin : 0 auto;
+    width : 90%;
+    height: 200px;
+    text-align: center;
+}
+
+#skills_picture{
+    text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 116px;
+    border-radius: 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.skills_label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius:30px;
+    width: 120px;
+    height: 120px;
+    opacity: .8;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+    visibility: hidden;
+}
+
+#skills_picture:hover .skills_label{
+    visibility: visible;
+}
+
+#skills_picture img{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 120px;
+    height: 120px;
+    border-radius:  30px;
+}
+
+
+.project {
+    background-color: rgb(108, 218, 178);
+    width : 100%;
+    height: 700px;
+    float: left;
+}
+
+.project_heeding{
+    margin : 0 auto;
+    text-align : center;
+    margin-top : 50px;
+    width : 150px;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+
+.project_heeding::after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: 2px solid red;
+    margin : 0 0 0 100px;
+  }
+
+  #project_content{
+      height: 400px;
+      width : 800px;
+      margin : 0 auto;
+      margin-top : 60px;
+      background-color: white;
+      box-shadow: 3px 3px 3px gray;
+  }
+
+  #project_img{
+      float: left;
+      width : 350px;
+      height: 400px;
+  }
+
+  #project_img img{
+    width : 350px;
+    height: 400px;
+  }
+
+  #project_text{
+    float: left;
+    width : 450px;
+    height: 400px;
+  }
+
+  .project_text_box{
+      width : 400px;
+      height: 350px;
+      margin : 0 auto;
+      vertical-align: middle;
+  }
+
+  #project_content p,h1{
+      margin-top : 25px;
+  }
+
+  #project_content .content_link img{
+      margin-top : 10px;
+      width : 50px;
+      height : 50px;
+  }
+
+#contact{
+    float : left;
+    width : 100%;
+    height: 400px;
+    text-align : center;
+}
+
+.contact_heeding{
+  margin : 0 auto;
+  text-align : center;
+  margin-top : 50px;
+  width : 150px;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+
+.contact_heeding::after {
+  content: "";
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid blue;
+  margin : 0 0 0 10px;
+}
+
+.contact_email{
+    margin-top : 60px;
+}
+
+.contatct_github img{ 
+    width : 90px;
+    height: 90px;
+}
