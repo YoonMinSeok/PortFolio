@@ -250,7 +250,7 @@ body{
 .project {
     background-color: rgb(108, 218, 178);
     width : 100%;
-    height: 700px;
+    height: 1200px;
     float: left;
 }
 
@@ -277,7 +277,7 @@ body{
       height: 400px;
       width : 800px;
       margin : 0 auto;
-      margin-top : 60px;
+      margin-top : 100px;
       background-color: white;
       box-shadow: 3px 3px 3px gray;
   }
