@@ -32,3 +32,4 @@ function project(){
 function contact(){
   window.scrollTo({top:2770, left:0, behavior:'smooth'});
 };
+
