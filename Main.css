@@ -173,10 +173,10 @@ body{
     background-color: lightgrey;
 }
 
-.skills h1{
+.skills_heeding{
     margin : 0 auto;
     text-align : center;
-    margin : 40px 0 40px 0;
+    margin-top : 50px;
     width : 150px;
     font-size: 50px;
     font-weight: normal;
