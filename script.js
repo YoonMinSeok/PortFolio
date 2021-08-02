@@ -30,6 +30,6 @@ function project(){
 };
 
 function contact(){
-  window.scrollTo({top:2770, left:0, behavior:'smooth'});
+  window.scrollTo({top:3170, left:0, behavior:'smooth'});
 };
 
