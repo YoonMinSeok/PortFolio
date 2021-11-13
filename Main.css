@@ -121,17 +121,14 @@ body{
 }
 
 .about_me{
+    display: flex;
     float : left;
     height : 100%;
     width : 25%;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.about_me_text{
-    width : 100%;
-    height: 40px;
-    margin-top: 50%; 
-}
 .about_me_text h1{
     font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
 }
@@ -168,7 +165,7 @@ body{
 
 .skills{
     width : 100%;
-    height : 800px;
+    padding : 100px 0;
     float: left;
     background-color: lightgrey;
 }
@@ -201,7 +198,6 @@ body{
 #skills_content{
     margin : 0 auto;
     width : 90%;
-    height: 200px;
     text-align: center;
 }
 
@@ -213,7 +209,7 @@ body{
     border-radius: 30px 30px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 2rem;
+    margin: 10px;
     box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 
@@ -250,14 +246,13 @@ body{
 .project {
     background-color: rgb(108, 218, 178);
     width : 100%;
-    height: 1700px;
+    padding: 100px 0;
     float: left;
 }
 
 .project_heeding{
     margin : 0 auto;
     text-align : center;
-    margin-top : 50px;
     width : 150px;
     color: white;
     font-size: 40px;
